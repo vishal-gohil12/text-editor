@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.highlight-selection {
+  border-radius: 2px;
+}
+
+.ProseMirror {
+  min-height: 200px;
+}
+
+.ProseMirror p {
+  margin: 1em 0;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+/* Add styles for text formatting */
+.ProseMirror strong {
+  font-weight: bold;
+}
+
+.ProseMirror em {
+  font-style: italic;
+}
+
+/* Improve toolbar button styles */
+.toolbar-button {
+  @apply p-2 rounded hover:bg-gray-100 transition-colors;
+}
+
+.toolbar-button.active {
+  @apply bg-gray-100;
+}
